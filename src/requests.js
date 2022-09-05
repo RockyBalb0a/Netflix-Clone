@@ -1,5 +1,5 @@
-const API_KEY = "df1b14e24ed3b413c11ee1d416db78d0";
-
+const API_KEY = process.env.REACT_APP_API_KEY;
+console.log(API_KEY);
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
     fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
